@@ -1,0 +1,33 @@
+{
+  "name": "smart-study-planner-server",
+  "version": "1.0.0",
+  "description": "Smart Study Planner Backend API",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "prisma:migrate": "npx prisma migrate dev",
+    "prisma:studio": "npx prisma studio"
+  },
+  "keywords": [
+    "study",
+    "planner",
+    "tasks"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "prisma": "^5.7.1",
+    "@prisma/client": "^5.7.1",
+    "dotenv": "^16.3.1",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0",
+    "cors": "^2.8.5",
+    "express-validator": "^7.0.0",
+    "helmet": "^7.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

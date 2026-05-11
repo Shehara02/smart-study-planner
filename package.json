@@ -1,0 +1,25 @@
+{
+  "name": "smart-study-planner",
+  "version": "1.0.0",
+  "description": "A modern full-stack Smart Study Planner application",
+  "private": true,
+  "scripts": {
+    "setup": "echo 'Follow the README.md for setup instructions'",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install && cd ..",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\"",
+    "build": "cd client && npm run build && cd ..",
+    "start": "cd server && npm start",
+    "start:prod": "npm run build && cd server && npm start"
+  },
+  "keywords": [
+    "study",
+    "planner",
+    "tasks",
+    "productivity"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
